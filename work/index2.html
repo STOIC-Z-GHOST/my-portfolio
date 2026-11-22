@@ -77,12 +77,13 @@
   <div class="case-tags">
     <span class="case-tag">Next.js</span>
     <span class="case-tag">Drizzle ORM</span>
-    <span class="case-tag">Neon DB</span>
+    <span class="case-tag">Neon Postgres</span>
+    <span class="case-tag">PWA</span>
     <span class="case-tag">Telegram API</span>
     <span class="case-tag">Chapa</span>
   </div>
   <h1 class="case-title">EcoFurnish — Sustainable E-Commerce Platform</h1>
-  <p style="color: var(--muted2); max-width: 650px; margin: 0 auto;">A full-stack, eco-conscious e-commerce web application designed for modern living. Engineered with real-time eco-impact tracking, multi-currency localization, responsive mobile-first architecture, an admin portal, and an automated Telegram crash logging bot.</p>
+  <p style="color: var(--muted2); max-width: 650px; margin: 0 auto;">A full-stack, eco-conscious e-commerce web application designed for modern living. Engineered with real-time eco-impact tracking, multi-currency localization, responsive mobile-first architecture, an admin portal, a driver delivery system, and a Telegram admin bot.</p>
 </header>
 
 <section class="media-showcase">
@@ -139,7 +140,7 @@
   <div class="feature-row">
     <div class="feature-text">
       <h3 class="feature-title">Automated Telemetry & Admin Controls</h3>
-      <p class="feature-desc">Integrated an Admin Management Suite for real-time inventory control alongside a dedicated Telegram Bot webhook that instantly dispatches server crash logs, daily digests, and diagnostic alerts directly to the developer.</p>
+      <p class="feature-desc">Integrated an Admin Management Suite for inventory control alongside a Telegram bot that sends a daily sales digest and answers questions about the store from real database numbers (AI only phrases the results, it never calculates them).</p>
     </div>
     <div class="feature-img">
       <div class="carousel-wrapper" id="admin-carousel">
@@ -150,6 +151,18 @@
         <button class="carousel-btn btn-prev" onclick="moveSlide(-1, 'admin-inner')">‹</button>
         <button class="carousel-btn btn-next" onclick="moveSlide(1, 'admin-inner')">›</button>
       </div>
+    </div>
+  </div>
+
+  <!-- Feature: Delivery logistics -->
+  <div class="feature-row">
+    <div class="feature-text">
+      <h3 class="feature-title">Driver Delivery System</h3>
+      <p class="feature-desc">Built a full delivery workflow: a dispatcher role assigns orders to approved drivers on a map, drivers update status through a one-time magic link, and every "delivered" claim needs the buyer's PIN plus dispatcher approval. Orders move through pending → processing → on the road → delivered, with a customer email at each step.</p>
+    </div>
+    <div class="feature-text">
+      <h3 class="feature-title">Installable PWA &amp; Performance</h3>
+      <p class="feature-desc">Installable on phone and desktop with separate mobile and desktop layouts. Tuned with Lighthouse: Accessibility 100, Best Practices 100, SEO 100, and Performance in the 90s on most runs (re-encoded product images, trimmed legacy JS, CSP headers).</p>
     </div>
   </div>
 
