@@ -138,6 +138,12 @@ footer a{color:var(--muted);text-decoration:none;transition:color .2s}footer a:h
 .cta h3{font-size:1.8rem;margin-bottom:.7rem}
 .cta p{color:var(--muted2);max-width:30em;margin:0 auto 1.6rem}
 
+
+/* floating back button (case studies) */
+.back-fab{position:fixed;left:1.25rem;bottom:calc(1.25rem + env(safe-area-inset-bottom,0px));z-index:100;display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:100px;border:1px solid rgba(181,255,77,.35);background:rgba(10,10,10,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--accent);font:400 12px 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;box-shadow:0 8px 30px rgba(0,0,0,.45);transition:transform .2s,background .2s,color .2s}
+.back-fab:hover{background:var(--accent);color:#0a0a0a;transform:translateX(-3px)}
+@media(max-width:768px){.back-fab{left:1rem;padding:11px 16px}}
+
 @media(max-width:900px){.grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr;gap:3rem}}
 @media(max-width:768px){
  nav{padding:1rem 1.5rem;background:rgba(10,10,10,.92);backdrop-filter:blur(8px);border-color:var(--border)}
