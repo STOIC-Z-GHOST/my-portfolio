@@ -4,73 +4,139 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nahom, full-stack web developer in Addis Ababa</title>
-<meta name="description" content="Nahom builds websites, online stores and web apps with Next.js and Postgres. See EcoFurnish, MyFit and Ahadu.">
+<meta name="description" content="Nahom builds websites, online stores and web apps with Next.js and Postgres. See EcoFurnish, MyFit, Ahadu and Assist AI.">
 <meta property="og:title" content="Nahom, full-stack web developer">
-<meta property="og:description" content="Online store with real payments, a fitness app and a restaurant site, all live.">
+<meta property="og:description" content="Online store with real payments, a fitness app, a restaurant site and an AI Telegram bot, all live.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://nahoms-portfolio.netlify.app/work/assets/catalog-hero.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231f5e4b'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='700' text-anchor='middle' fill='white' font-family='sans-serif'%3EN%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0a0a'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='700' text-anchor='middle' fill='%23b5ff4d' font-family='sans-serif'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<nav><div class="wrap"><a class="logo" href="#">Nahom</a><div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></nav>
+<canvas id="sphere" aria-hidden="true"></canvas>
 
-<header class="hero wrap">
-  <h1>I build websites and web apps for small businesses.</h1>
-  <p>I'm a full-stack developer in Addis Ababa. I've built an online store with real payments, a restaurant site, a fitness app and Telegram bots, mostly with Next.js and Postgres.</p>
-  <div class="btns"><a class="btn" href="#work">See my work</a><a class="btn alt" href="https://www.upwork.com/freelancers/~0145d2d9df8b7e93d8?mp_source=share" target="_blank" rel="noopener noreferrer">Hire me on Upwork</a></div>
+<nav id="nav">
+  <a class="nav-logo" href="#">nahom<span>.</span></a>
+  <ul class="nav-links"><li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#contact">Hire me</a></li></ul>
+</nav>
+
+<header class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-left">
+    <div class="badge">Open for freelance work</div>
+    <h1 class="hero-title">
+      <span class="line"><span>I build</span></span>
+      <span class="line"><span>websites and</span></span>
+      <span class="line"><span class="accent">web apps for</span></span>
+      <span class="line"><span>small businesses.</span></span>
+    </h1>
+    <p class="hero-sub">I'm a full-stack developer in Addis Ababa. I've built an online store with real payments, a restaurant site, a fitness app and Telegram bots, mostly with Next.js and Postgres.</p>
+    <div class="btns">
+      <a class="btn" href="#work">See my work</a>
+      <a class="btn alt" href="https://www.upwork.com/freelancers/~0145d2d9df8b7e93d8?mp_source=share" target="_blank" rel="noopener noreferrer">Hire me on Upwork ↗</a>
+    </div>
+  </div>
+  <div class="hero-right" aria-hidden="true">
+    <div class="code-box">
+      <div class="code-dots"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div>
+      <div class="code-line"><span class="cm">// nahom.ts</span></div>
+      <div class="code-line"><span class="kw">const</span> nahom = {</div>
+      <div class="code-line">  role: <span class="str">"Full-stack dev"</span>,</div>
+      <div class="code-line">  city: <span class="str">"Addis Ababa"</span>,</div>
+      <div class="code-line">  stack: [<span class="str">"Next.js"</span>,</div>
+      <div class="code-line">    <span class="str">"Postgres"</span>, <span class="str">"Tailwind"</span>],</div>
+      <div class="code-line">  shipped: <span class="fn">4</span>,</div>
+      <div class="code-line">  workflow: <span class="str">"AI-assisted,</span></div>
+      <div class="code-line"><span class="str">    human-tested"</span></div>
+      <div class="code-line">}</div>
+    </div>
+  </div>
 </header>
 
-<section id="work"><div class="wrap">
-  <h2>Selected work</h2>
-  <article class="work">
-    <img src="work/assets/catalog-hero.png" alt="EcoFurnish product catalog" loading="lazy">
-    <div>
-      <h3>EcoFurnish</h3>
-      <p>An online store for furniture made from recycled plastic and wood. Customers pay with Chapa, track their orders and invite friends. The owner gets an admin dashboard, a driver delivery flow and a Telegram bot.</p>
-      <p class="stack">Next.js, Postgres, Drizzle, Chapa</p>
-      <div class="links"><a href="work/ecofurnish.html">Read the case study</a><a href="https://ecofurnish.de5.net/" target="_blank" rel="noopener noreferrer">Open the site</a></div>
-    </div>
-  </article>
-  <article class="work">
-    <img src="work/assets/welcome.png" alt="MyFit home screen with daily target and streak" loading="lazy">
-    <div>
-      <h3>MyFit</h3>
-      <p>A calisthenics tracker that works like a game. It gives you a starting plan from your max push-ups, then guides each workout with rest timers, streaks, ranks and a small in-app shop.</p>
-      <p class="stack">Next.js, TypeScript, Tailwind</p>
-      <div class="links"><a href="work/myfit.html">Read the case study</a><a href="https://myfit.us.ci/" target="_blank" rel="noopener noreferrer">Open the app</a></div>
-    </div>
-  </article>
-  <article class="work">
-    <img src="work/assets/ahadu-home.jpg" alt="Ahadu restaurant home page" loading="lazy">
-    <div>
-      <h3>Ahadu</h3>
-      <p>A demo site for a restaurant and café. It has a menu with ingredient details, a gallery and table reservations that check how many seats are left. It's a template I can adapt to a client's restaurant.</p>
-      <p class="stack">Next.js, Postgres, Drizzle, Tailwind</p>
-      <div class="links"><a href="work/ahadu.html">Read the case study</a><a href="https://ahadu.us.ci/" target="_blank" rel="noopener noreferrer">Open the site</a></div>
-    </div>
-  </article>
-  <div class="also">
-    <h3>Assist AI, a Telegram bot</h3>
-    <p>An AI assistant inside Telegram that chats, reads documents, makes images and files, and takes voice messages. It has a mini app with saved chats, web search, model choices and paid plans through Telegram Stars. <a href="work/assist-ai.html">Read the case study</a> &nbsp; <a href="https://t.me/AskAssistAIBot" target="_blank" rel="noopener noreferrer">Try it on Telegram</a></p>
+<div class="strip">
+  <div class="reveal"><b>4</b><small>projects live and open to try</small></div>
+  <div class="reveal"><b>100<span> / </span>99</b><small>PageSpeed on EcoFurnish, mobile and desktop</small></div>
+  <div class="reveal"><b>Next.js</b><small>with Postgres, from design to hosting</small></div>
+</div>
+
+<section class="projects" id="work">
+  <div class="tag reveal">Selected work</div>
+  <h2 class="title reveal">Four projects, all live.</h2>
+  <div class="grid">
+    <article class="card reveal">
+      <div class="card-img"><img src="work/assets/catalog-hero.png" alt="EcoFurnish product catalog" loading="lazy"></div>
+      <div class="card-body">
+        <div class="card-tags"><span>Next.js</span><span>Postgres</span><span>Drizzle</span><span>Chapa</span></div>
+        <h3>EcoFurnish</h3>
+        <p>An online store for furniture made from recycled plastic and wood. Customers pay with Chapa, track their orders and invite friends. The owner gets an admin dashboard, a driver delivery flow and a Telegram bot.</p>
+        <div class="card-links"><a href="work/ecofurnish.html">Read the case study</a><a href="https://ecofurnish.de5.net/" target="_blank" rel="noopener noreferrer">Open the site ↗</a></div>
+      </div>
+    </article>
+    <article class="card reveal">
+      <div class="card-img"><img src="work/assets/myfit-card.jpg" alt="MyFit home, workout and leaderboard screens" loading="lazy"></div>
+      <div class="card-body">
+        <div class="card-tags"><span>Next.js</span><span>TypeScript</span><span>Tailwind</span></div>
+        <h3>MyFit</h3>
+        <p>A calisthenics tracker that works like a game. It gives you a starting plan from your max push-ups, then guides each workout with rest timers, streaks, ranks and a small in-app shop.</p>
+        <div class="card-links"><a href="work/myfit.html">Read the case study</a><a href="https://myfit.us.ci/" target="_blank" rel="noopener noreferrer">Open the app ↗</a></div>
+      </div>
+    </article>
+    <article class="card reveal">
+      <div class="card-img"><img src="work/assets/ahadu-home.jpg" alt="Ahadu restaurant home page" loading="lazy"></div>
+      <div class="card-body">
+        <div class="card-tags"><span>Next.js</span><span>Postgres</span><span>Drizzle</span><span>Tailwind</span></div>
+        <h3>Ahadu</h3>
+        <p>A demo site for a restaurant and café. It has a menu with ingredient details, a gallery and table reservations that check how many seats are left. It's a template I can adapt to a client's restaurant.</p>
+        <div class="card-links"><a href="work/ahadu.html">Read the case study</a><a href="https://ahadu.us.ci/" target="_blank" rel="noopener noreferrer">Open the site ↗</a></div>
+      </div>
+    </article>
+    <article class="card reveal">
+      <div class="card-img"><img src="work/assets/assist-ai-card.jpg" alt="Assist AI model picker, plans and settings in the Telegram mini app" loading="lazy"></div>
+      <div class="card-body">
+        <div class="card-tags"><span>Next.js</span><span>Telegram Mini App</span><span>Telegram Stars</span></div>
+        <h3>Assist AI</h3>
+        <p>An AI assistant inside Telegram that chats, reads documents, makes images and files, and takes voice messages. Its mini app has saved chats, web search, model choices and paid plans.</p>
+        <div class="card-links"><a href="work/assist-ai.html">Read the case study</a><a href="https://t.me/AskAssistAIBot" target="_blank" rel="noopener noreferrer">Try it on Telegram ↗</a></div>
+      </div>
+    </article>
   </div>
-</div></section>
+</section>
 
-<section id="about" class="about"><div class="wrap">
-  <h2>About</h2>
-  <p>I take a project from design to a live site: layout, database, accounts, payments and hosting. I like clear communication and sites that load fast on a phone.</p>
-  <p>I use AI tools to move faster, and I read and test everything before it ships.</p>
-  <p class="skills">Next.js, React, TypeScript, Tailwind, Postgres with Drizzle, Better Auth, payments, PWAs and Telegram bots.</p>
-</div></section>
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <div class="tag reveal">About</div>
+      <h2 class="title reveal">Design to live site,<br>in one place.</h2>
+      <div class="about-text reveal">
+        <p>I take a project from design to a live site: layout, database, accounts, payments and hosting. I like clear communication and sites that load fast on a phone.</p>
+        <p>I use <strong>AI tools to move faster</strong>, and I read and test everything before it ships.</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="skills-label">Skills and tools</div>
+      <div class="skills">
+        <div>Next.js</div><div>React</div><div>TypeScript</div><div>Tailwind CSS</div>
+        <div>Postgres + Drizzle</div><div>Better Auth</div><div>Payments (Chapa)</div><div>PWAs</div>
+        <div>Telegram bots</div><div>UI / UX design</div><div>Responsive design</div><div>Performance tuning</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section id="contact"><div class="wrap">
-  <h2>Work with me</h2>
-  <p style="margin-bottom:1.5rem;max-width:34em">I'm open to freelance projects and longer contracts. The easiest way to reach me is on Upwork.</p>
-  <div class="btns"><a class="btn" href="https://www.upwork.com/freelancers/~0145d2d9df8b7e93d8?mp_source=share" target="_blank" rel="noopener noreferrer">Message me on Upwork</a></div>
-</div></section>
+<section class="cta-section" id="contact">
+  <div class="tag reveal">Work with me</div>
+  <h2 class="cta-title reveal">Got a project?<br>Let's talk.</h2>
+  <p class="cta-sub reveal">I'm open to freelance projects and longer contracts. The easiest way to reach me is on Upwork.</p>
+  <a class="btn outline reveal" href="https://www.upwork.com/freelancers/~0145d2d9df8b7e93d8?mp_source=share" target="_blank" rel="noopener noreferrer">Message me on Upwork ↗</a>
+</section>
 
-<footer><div class="wrap"><span>© 2026 Nahom</span><span><a href="https://github.com/Nahom-F" target="_blank" rel="noopener noreferrer">GitHub</a></span></div></footer>
+<footer>
+  <span>© 2026 Nahom</span>
+  <div><a href="https://github.com/Nahom-F" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.upwork.com/freelancers/~0145d2d9df8b7e93d8?mp_source=share" target="_blank" rel="noopener noreferrer">Upwork</a></div>
+</footer>
+<script src="fx.js" defer></script>
 </body>
 </html>
