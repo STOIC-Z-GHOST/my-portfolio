@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EcoFurnish, online store | Nahom</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0a0a'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='700' text-anchor='middle' fill='%23b5ff4d' font-family='sans-serif'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="assets/nigat-icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../site.css">
 </head>
 <body>
 
-<nav id="nav"><a class="nav-logo" href="../index.html">tsehay<span>.</span></a><ul class="nav-links"><li><a href="../index.html#work">All projects</a></li></ul></nav>
+<nav id="nav"><a class="nav-logo" href="../index.html"><img src="assets/nigat-mark.svg" width="26" height="26" alt="">nigat<span>.</span></a><ul class="nav-links"><li><a href="../index.html#work">All projects</a></li></ul></nav>
 
 <header class="case-header">
   <h1 class="case-title">EcoFurnish — Sustainable E-Commerce Platform</h1>
@@ -22,6 +22,7 @@
     <span class="case-tag">PWA</span>
     <span class="case-tag">Telegram API</span>
     <span class="case-tag">Chapa</span>
+    <span class="case-tag">Online Stores, Level 3</span>
   </div>
 </header>
 
@@ -95,6 +96,54 @@
   </div>
 
   <!-- Feature: PageSpeed proof (CAROUSEL) -->
+    <div class="feature-row">
+    <div class="feature-text">
+      <h3 class="feature-title">A calmer, more modern look</h3>
+      <p class="feature-desc">The storefront was redesigned with a serif heading style, softer light and dark colours, and a clearer product page. Customers pick a colour and size with picture swatches, see live stock and the plastic diverted, and get a delivery estimate.</p>
+    </div>
+    <div class="feature-img"><div class="carousel-wrapper" id="look-car"><div class="carousel-inner" id="look-car-inner"><div class="carousel-item"><img src="assets/eco-home.webp" alt="EcoFurnish desktop home page" loading="lazy"></div><div class="carousel-item"><img src="assets/eco-product.webp" alt="EcoFurnish product page with colour and size options" loading="lazy"></div></div><button class="carousel-btn btn-prev" onclick="moveSlide(-1, 'look-car-inner')" aria-label="Previous screenshot">‹</button><button class="carousel-btn btn-next" onclick="moveSlide(1, 'look-car-inner')" aria-label="Next screenshot">›</button></div></div>
+  </div>
+
+  <div class="feature-row">
+    <div class="feature-text">
+      <h3 class="feature-title">Made for phones</h3>
+      <p class="feature-desc">On mobile, products show as horizontal cards with a bottom navigation bar and a “pick up where you left off” card. The leaf assistant blinks, and phone users can swipe it off the edge of the screen to minimise it.</p>
+    </div>
+    <div class="feature-img"><div class="carousel-wrapper" id="phone-car"><div class="carousel-inner" id="phone-car-inner"><div class="carousel-item"><img src="assets/eco-mobile-home.webp" alt="EcoFurnish mobile home with continue browsing card" loading="lazy"></div><div class="carousel-item"><img src="assets/eco-mobile-shop.webp" alt="EcoFurnish mobile product cards" loading="lazy"></div></div><button class="carousel-btn btn-prev" onclick="moveSlide(-1, 'phone-car-inner')" aria-label="Previous screenshot">‹</button><button class="carousel-btn btn-next" onclick="moveSlide(1, 'phone-car-inner')" aria-label="Next screenshot">›</button></div></div>
+  </div>
+
+    <div class="feature-row">
+    <div class="feature-text">
+      <h3 class="feature-title">Settings and page editor for the owner</h3>
+      <p class="feature-desc">The owner can edit the wording of the legal and About pages without touching code. A settings page switches the store between real stock and demo mode, turns on a maintenance page or an announcement bar, and controls guest checkout, new reviews and new sign-ups. The chatbot, install bar, video ad, newsletter and testimonials can each be switched off.</p>
+    </div>
+    <div class="feature-img"><div class="carousel-wrapper" id="admin2-car"><div class="carousel-inner" id="admin2-car-inner"><div class="carousel-item"><img src="assets/eco-admin-dashboard.webp" alt="EcoFurnish admin dashboard" loading="lazy"></div><div class="carousel-item"><img src="assets/eco-admin-pages.webp" alt="EcoFurnish admin page editor" loading="lazy"></div><div class="carousel-item"><img src="assets/eco-settings-store.webp" alt="EcoFurnish settings: store mode and maintenance mode" loading="lazy"></div><div class="carousel-item"><img src="assets/eco-settings-checkout.webp" alt="EcoFurnish settings: announcement bar, guest checkout, reviews and accounts" loading="lazy"></div><div class="carousel-item"><img src="assets/eco-settings-features.webp" alt="EcoFurnish settings: features and homepage sections" loading="lazy"></div></div><button class="carousel-btn btn-prev" onclick="moveSlide(-1, 'admin2-car-inner')" aria-label="Previous screenshot">‹</button><button class="carousel-btn btn-next" onclick="moveSlide(1, 'admin2-car-inner')" aria-label="Next screenshot">›</button></div></div>
+  </div>
+
+  <div class="feature-row">
+    <div class="feature-text">
+      <h3 class="feature-title">A safe guest view of the admin</h3>
+      <p class="feature-desc">Visitors can explore the admin as a temporary read-only guest. The owner picks which admin pages a guest can open, guests only see made-up sample data, and anything they try stays on their own screen. Pages that are switched off show “Page not found”, and the Dispatcher Panel is left out because it has its own separate login.</p>
+    </div>
+    <div class="feature-img"><div class="carousel-wrapper" id="guest-car"><div class="carousel-inner" id="guest-car-inner"><div class="carousel-item"><img src="assets/eco-settings-guest-link.webp" alt="EcoFurnish settings with a Guest settings entry" loading="lazy"></div><div class="carousel-item"><img src="assets/eco-guest-pages.webp" alt="EcoFurnish guest settings: pages guests can open" loading="lazy"></div><div class="carousel-item"><img src="assets/eco-guest-pages2.webp" alt="EcoFurnish guest settings: switched-off admin pages" loading="lazy"></div></div><button class="carousel-btn btn-prev" onclick="moveSlide(-1, 'guest-car-inner')" aria-label="Previous screenshot">‹</button><button class="carousel-btn btn-next" onclick="moveSlide(1, 'guest-car-inner')" aria-label="Next screenshot">›</button></div></div>
+  </div>
+
+  <div class="feature-row">
+    <div class="feature-text">
+      <h3 class="feature-title">Leaf assistant on phones</h3>
+      <p class="feature-desc">A small blinking leaf sits on every page. On a phone you can drag it, or swipe it off the edge of the screen to minimise it so it peeks in. Tap it to open the chat and ask about products, delivery or ordering.</p>
+    </div>
+    <div class="feature-img"><div class="video-container" style="margin:0"><video controls playsinline preload="none" poster="assets/eco-assistant-mobile-poster.jpg"><source src="assets/eco-assistant-mobile.mp4" type="video/mp4"></video></div></div>
+  </div>
+
+  <div class="feature-row">
+    <div class="feature-text">
+      <h3 class="feature-title">Same assistant on desktop</h3>
+      <p class="feature-desc">On a computer the assistant opens as a chat window in the corner, so customers can ask a question without leaving the product list.</p>
+    </div>
+    <div class="feature-img"><div class="video-container" style="margin:0"><video controls playsinline preload="none" poster="assets/eco-assistant-desktop-poster.jpg"><source src="assets/eco-assistant-desktop.mp4" type="video/mp4"></video></div></div>
+  </div>
+
   <div class="feature-row">
     <div class="feature-text">
       <h3 class="feature-title">Measured with PageSpeed Insights</h3>
